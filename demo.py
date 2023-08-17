@@ -9,9 +9,7 @@ from llama_index import StorageContext,load_index_from_storage
 load_dotenv()
 
 import openai
-openai.api_key = "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"
 
-os.environ['OPENAI_API_KEY'] = "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"
 
 def construct_index(directory_path):
     max_input_size = 4096
