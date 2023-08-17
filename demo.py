@@ -10,7 +10,9 @@ load_dotenv()
 
 import openai
 
+openai.api_key = ""
 
+os.environ['OPENAI_API_KEY'] = ""
 def construct_index(directory_path):
     max_input_size = 4096
     num_outputs = 512
